@@ -48,3 +48,8 @@ Thumbs.db
 *.mov
 *.wmv
 
+backend/node_modules/
+backend/dist/
+frontend/.env
+backend/.env.local
+backend/.env.test
