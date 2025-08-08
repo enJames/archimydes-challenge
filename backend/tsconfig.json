@@ -1,0 +1,39 @@
+{
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "compilerOptions": {
+    "isolatedModules": true,
+    "outDir": "dist/src",
+    "types": [
+      "node"
+    ],
+    "allowJs": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "./types/*.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "types/enums.type.d.ts",
+    "types/express.type.d.ts",
+    "types/general.type.d.ts",
+    "types/sequelize.type.d.ts",
+    "types/test-data.type.d.ts",
+    "types/user.type.d.ts",
+  ],
+  "include": [
+    "src/entities/**/*",
+    "src/environmentVariablesLoader",
+    "src/middleware/**/*",
+    "src/tools/**/*",
+    "src/app.ts",
+    "src/index.ts",
+    "types/*.d.ts",
+    "test/**/*",
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+}
